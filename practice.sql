@@ -30,5 +30,12 @@ select  * from country order by country desc;
 
 select country from country order by last_update desc;
 
+use sakila;
+
+select * from country where country_id >3 and country like "%Z%";
+
+select last_update from country where country like "%A";
+
+
 
 
