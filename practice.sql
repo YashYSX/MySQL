@@ -36,6 +36,7 @@ select * from country where country_id >3 and country like "%Z%";
 
 select last_update from country where country like "%A";
 
-
+use sakila;
+select actor_id from actor ;
 
 
