@@ -56,3 +56,14 @@ select fid,title from film_list order by 1 desc;
 select * from address order by district;
 
 select district,address,address_id from address order by district desc,address_id asc;
+
+use sakila;
+show tables;
+describe actor;
+desc actor;
+
+select * from actor;
+
+select actor_id from actor;
+
+select actor_id,first_name,last_name from actor;
