@@ -67,3 +67,14 @@ select * from actor;
 select actor_id from actor;
 
 select actor_id,first_name,last_name from actor;
+
+use sakila;
+show tables;
+describe actor;
+desc actor;
+
+select * from actor;
+
+select actor_id from actor;
+
+select actor_id,first_name,last_name from actor;
