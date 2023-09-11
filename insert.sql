@@ -50,3 +50,4 @@ insert into employee2 (eid,ename,email)
 values(1,"tushar","tushar@gmail.com");
 
 select * from employee2;
+use sakila;
