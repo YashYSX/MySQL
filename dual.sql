@@ -17,15 +17,26 @@ select now();
 
 --  string function --
 
-select length ("YASH") from dual;
+select length ("") from dual; -- give length in byte
 
-select char_length("my dream world")from dual;
+select char_length("my dream world")from dual; -- give count of character
 
-select concat("d","5","g") from dual;
+select concat("d","5","g") from dual; -- combine the character meaning add the chracter
 
-select concat_ws(" ","hello","this","is","YSX") from dual;
+select concat("h","i") from dual;
 
-select ucase("hi");
+select concat("Y","S","X");
+
+
+select concat_ws(" ","hello","this","is","YSX") from dual; -- kis seperator ke hisab se character ko add karana hai
+
+select concat_ws(" ","i","am","iron-man") from dual;
+
+select ucase("hi"); -- same as uppercase (capital letter)
+
+select substr("hello",-4); -- it have no 0 index
+
+select substr("yash",1,3);
 
 select substr(substr("hello",1,4),2); -- positive from left to right and negative from right to left------//nested substring
 
