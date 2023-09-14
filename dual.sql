@@ -38,7 +38,7 @@ select substr("hello",-4); -- it have no 0 index
 
 select substr("yash",1,3);
 
-select substr(substr("hello",1,4),2); -- positive from left to right and negative from right to left------//nested substring
+select substr(substr("hello",1,3),2); -- positive from left to right and negative from right to left------//nested substring
 
 
 select substr("hello",-1);-- for negative
@@ -48,18 +48,22 @@ select substr("hello",1,3);-- for positive
 
 
 
-select instr("yashsaini","i"); -- to know the index of letter in a word-------
+select instr("i-am-ironman","n"); -- check the position of the letter (index position) 
 
-select locate("a","rajsthan",3);-- first define letter then string then starting index
+select locate("l","hello"); -- find the letter and position
 
-select ltrim("         yash");-- ltrim removes the whitespace from string from left side
+select locate("a","rajasthan",5);-- first define letter then string then starting index,( appko kha se searching start karni hai)
+
+select ltrim("         yash");-- ltrim removes the whitespace of string from left side
 
 select rtrim("abc        ");-- rtrim for right side
 
-select trim(leading" " from "       xyz        ");-- form start
+select trim("       yash       "); -- remove whitespace from starting and ending
+
+select trim(leading" " from "       xyz        ");-- remove whitespace from starting 
 
 select trim(trailing" " from "       xyz        ");-- from ending
 
 select trim(both"z" from "zz zz         z");-- first 2z removed and then only last z is removed
 
-select lpad("hello",7,"#"); -- for left side addition to male character equ
+select lpad("hello",7,"#"); -- hello ke alwaw mujhe or bhi character chaiye agar nhi hai toh hash print ho jaye 
